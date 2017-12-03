@@ -68,11 +68,15 @@ header{
 }
 
 /* -- Estilos steps section -- */
-
-.steps {
-  margin: 0;
+.steps-section{
   background: #fff;
   text-align: center;
+  margin: 0;
+}
+
+.steps-section h2 {
+  padding-top: 60px;
+  margin: 0;
 }
 
 .step {
