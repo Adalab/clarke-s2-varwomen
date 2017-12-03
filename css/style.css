@@ -37,18 +37,10 @@ header{
   text-align: center;
   font-size: 28px;
 }
-.title-big{
-  text-align: center;
-  font-size: 23px;
-  text-transform: uppercase;
-}
+
 .title-medium{
   text-align: center;
   font-size: 20px;
-}
-.title-small{
-  text-align: center;
-  font-size: 18px;
 }
 
 .content-text{
@@ -75,6 +67,50 @@ header{
   color: #fff;
 }
 
+/* -- Estilos steps section -- */
+
+.steps {
+  margin: 0;
+  background: #fff;
+  text-align: center;
+}
+
+.step {
+  padding: 80px 24px;
+}
+
+.steps img {
+  width: 90px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media all and (min-width: 830px){
+  .steps {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .step{
+    width: 50%;
+    padding: 0 50px;
+    margin: 100px 0;
+  }
+}
+
+@media all and (min-width: 1200px){
+  .steps {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .step{
+    width: 25%;
+    margin: 100px 0;
+    padding: 0 50px;
+  }
+}
 
 /* -- Estilos formulario -- */
 .hidden{
@@ -148,22 +184,89 @@ legend {
    text-align: center;
  }  /*Modifica Sara: class added for start and end dates, skills and language*/
 
-/* -- Estilos cv mobile -- */
-.resume {
-  padding: 20px 35px;
-  background-color: #fff;
-}
 
 
-.profile-picture{
-  width: 200px;
-  height: 200px;
-  border-radius: 100px;
-  background-color: red;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
+ /* -- Estilos cv mobile -- */
+
+ .resume-container {
+   width: 90%;
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+ }
+
+ .resume {
+   padding: 20px;
+   background-color: #fff;
+ }
+
+ .resume h3 {
+   background: #e66760;
+   color: #fff;
+   padding: 10px;
+ }
+
+ .profile-picture{
+   width: 200px;
+   height: 200px;
+   border-radius: 100px;
+   background-color: red;
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+ }
+
+ .contact-section {
+   display: flex;
+ }
+
+ .contact-section p {
+   font-size: 13px;
+   margin: 5px 0;
+   margin-right: 10px;
+ }
+
+ .contact-info, .social-media {
+   width: 50%;
+ }
+
+ .option {
+   margin: 50px 0;
+ }
+
+ .where-info {
+   display: flex;
+   justify-content: space-between;
+ }
+
+ .date-info {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: flex-start;
+ }
+
+ .date-info p {
+   font-size: 13px;
+   margin: 0;
+   margin-right: 10px;
+ }
+
+ h5 {
+   font-size: 13px;
+   margin: 0;
+ }
+
+ .options-content {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: flex-start;
+ }
+
+ .options-content-items {
+   font-size: 13px;
+   margin: 0;
+   margin-right: 30px;
+ }
 
 /*Footer*/
 
