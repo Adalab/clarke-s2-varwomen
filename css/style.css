@@ -72,15 +72,16 @@ header{
   background: #fff;
   text-align: center;
   margin: 0;
+  padding: 60px 0 90px 0;
 }
 
 .steps-section h2 {
-  padding-top: 60px;
+  padding-top: 40px;
   margin: 0;
 }
 
 .step {
-  padding: 60px 24px;
+  padding: 40px 24px;
 }
 
 .steps img {
@@ -89,6 +90,14 @@ header{
   display: block;
   margin-left: auto;
   margin-right: auto;
+}
+
+.boton-start-second {
+  padding: 10px 80px;
+  margin-top: 40px;
+  background-color: #e66760;
+  border-radius: 5px;
+  color: #fff;
 }
 
 @media all and (min-width: 830px){
@@ -120,6 +129,9 @@ header{
   }
   .steps-section {
     padding: 50px 40px;
+  }
+  .boton-start-second{
+    display: none;
   }
 }
 
