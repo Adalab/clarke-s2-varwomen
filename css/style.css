@@ -250,7 +250,7 @@ input, textarea, select {
   appearance: none;
 }
 label {
-  font-size: 13px;
+  font-size: 14px;
   color: #fff;
 }
 
@@ -286,6 +286,22 @@ legend {
   width: 100%;
   padding: 10px 0;
   font-size: 16px;
+  color: #fff;
+}
+
+.add-more{
+  text-align: center;
+  background-color: #ccc;
+  border-radius: 5px;
+  width: 100%;
+  padding: 10px 0;
+  font-size: 16px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.experiencia-laboral p, .estudios p {
+  font-size: 14px;
   color: #fff;
 }
 
