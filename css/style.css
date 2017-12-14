@@ -50,7 +50,7 @@ header{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 20px;
+  padding: 0;
   color: #fff;
 }
 
@@ -71,18 +71,17 @@ header ul li {
 
 .logo{
   width: 150px;
+  margin-left: 20px;
 }
 
 
 @media all and (min-width: 724px){
-  header {
-      padding: 20px 40px;
-  }
+
   .logo{
     width: 200px;
+    margin-left: 20px;
   }
 }
-
 
 .icon {
   display: none;
@@ -91,14 +90,14 @@ header ul li {
 .icon-hamburguer {
   display: inline;
   width: 44px;
+  margin-right: 1px;
 }
 
 @media all and (min-width: 724px){
-  header {
-      padding: 20px 40px;
-  }
+
   .logo{
     width: 200px;
+    margin-left: 20px;
   }
 
   .icon {
@@ -287,17 +286,82 @@ legend {
  /* -- Estilos cv mobile -- */
 
 
- @media print { /* Using for the screen as well */
-   .resume-container {
-     width: 90%;
-     display: block;
-     margin-left: auto;
-     margin-right: auto;
+ @media print {
+   .principal-content{
+     display: flex;
+     flex-direction: column;
+   }
+   .form{
+     width: 100%;
+   }
+   .resume-container{
+     width: 100%;
+     padding: 50px 30px;
+     font-size: 14px;
+   }
+   .resume{
+     display: flex;
+     padding: 0;
+     width: 100%;
+     background-color: #fff;
    }
 
-   .resume {
-     padding: 20px;
-     background-color: #fff;
+   .resume-left{
+     padding: 24px;
+     width: 30%;
+     background: rgb(128,128,128);
+     color: #fff;
+   }
+   .resume-right{
+     padding: 0 24px;
+     width: 70%;
+   }
+   .profile-picture{
+     width: 140px;
+     height: 140px;
+     border-radius: 70px;
+     margin: 30px auto;
+   }
+   .personal-info-desktop {
+     display: block;
+     padding: 10px 0;
+   }
+   .personal-info-mvl {
+     display: none;
+   }
+   .contact-section{
+     display: block;
+   }
+   .title {
+     text-transform: uppercase;
+     text-align: center;
+     font-size: 18px;
+   }
+   .title-medium{
+     text-align: center;
+     font-size: 16px;
+   }
+   .contact-section {
+     display: block;
+   }
+   .contact-info, .social-media {
+     margin: 60px 0;
+   }
+   .resume-left h3 {
+     border-bottom: 2px solid #fff;
+     background-color: inherit;
+   }
+   .resume-right h3 {
+     border-bottom: 2px solid #000;
+     background-color: inherit;
+     color: #000;
+   }
+   .resume-right h4 {
+     display: block;
+     padding: 10px;
+     margin: 10px 0;
+     background-color: #ccc;
+     color: #fff;
    }
 
    .resume h3 {
@@ -464,7 +528,84 @@ legend {
 .extract-info p{
   margin: 70px 0;
 }
+}
 
+/*CV*/
+
+.principal-content{
+  display: flex;
+  flex-direction: column;
+}
+.form{
+  width: 100%;
+}
+.resume-container{
+  width: 100%;
+  padding: 50px 30px;
+  font-size: 14px;
+}
+.resume{
+  display: flex;
+  padding: 0;
+  width: 100%;
+}
+.resume-left{
+  padding: 24px;
+  width: 30%;
+  background: rgb(128,128,128);
+  color: #fff;
+}
+.resume-right{
+  padding: 0 24px;
+  width: 70%;
+}
+.profile-picture{
+  width: 140px;
+  height: 140px;
+  border-radius: 70px;
+  margin: 30px auto;
+}
+.personal-info-desktop {
+  display: block;
+  padding: 10px 0;
+}
+.personal-info-mvl {
+  display: none;
+}
+.contact-section{
+  display: block;
+}
+.title {
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 18px;
+}
+.title-medium{
+  text-align: center;
+  font-size: 16px;
+}
+.contact-section {
+  display: block;
+}
+.contact-info, .social-media {
+  margin: 60px 0;
+}
+.resume-left h3 {
+  border-bottom: 2px solid #fff;
+  background-color: inherit;
+}
+.resume-right h3 {
+  border-bottom: 2px solid #000;
+  background-color: inherit;
+  color: #000;
+}
+.resume-right h4 {
+  display: block;
+  padding: 10px;
+  margin: 10px 0;
+  background-color: #ccc;
+  color: #fff;
+}
 
  @media all and (min-width: 1024px){
   .principal-content{
@@ -560,18 +701,17 @@ footer {
   padding-bottom: 5%;
 }
 
-
 .footer-items {
   font-size: 14px;
   padding-left: 2vw;
   left: 2vw;
 }
 
-
 .footer-items:nth-child(1) {
   order: 1;
   color: #fff;
 }
+
 .footer-items:nth-child(2) {
   order: 2;
   margin-left: 3vw;
@@ -582,10 +722,12 @@ footer {
   color: #fff;
   text-decoration: none;
 }
+
 .footer-items a:visited {
   color: #fff;
   text-decoration: none;
 }
+
 .footer-items a:hover {
   color: #fff;
   text-decoration: none;
@@ -602,10 +744,12 @@ footer {
   top: 75%;
   display: block;
 }
+
 .button-up img {
   width: 50px;
   opacity: 0.5;
 }
+
 .button-up img:hover {
   opacity: 1;
 }
