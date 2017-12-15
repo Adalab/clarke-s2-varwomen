@@ -97,6 +97,32 @@ h5 {
 }
 
 @media all and (min-width: 1024px), print {
+
+  .insert-photo {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+  }
+
+  .button-photo{
+    padding: 10px 10px;
+    background-color: #e66760;
+    border-radius: 5px;
+    color: #fff;
+    margin: 10px;
+  }
+
+  .photo-button {
+    width: 26%;
+    padding: 10px;
+    margin: 10px 0;
+    background-color: #fff;
+    border-width: 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+
+
   .principal-content{
     display: flex;
     flex-direction: row-reverse;

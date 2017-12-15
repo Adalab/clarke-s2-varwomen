@@ -83,31 +83,9 @@ header ul li {
   }
 }
 
-
-.icon {
-  display: none;
-}
-
-.icon-hamburguer {
-  display: inline;
-  width: 44px;
-}
-
 @media all and (min-width: 724px){
   header {
       padding: 20px 40px;
-  }
-  .logo{
-    width: 200px;
-  }
-
-  .icon {
-    display: inline;
-    width: 49px;
-  }
-
-  .icon-hamburguer {
-    display: none;
   }
 }
 
@@ -183,6 +161,30 @@ header ul li {
   color: #fff;
 }
 
+.insert-photo {
+display: flex;
+justify-content: center;
+margin-bottom: 20px;
+}
+
+.button-photo{
+  padding: 10px 10px;
+  background-color: #e66760;
+  border-radius: 5px;
+  color: #fff;
+  margin: 10px;
+}
+
+.photo-button {
+  width: 26%;
+  padding: 10px;
+  margin: 10px 0;
+  background-color: #fff;
+  border-width: 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
 @media all and (min-width: 830px){
   .steps {
     display: flex;
@@ -196,6 +198,10 @@ header ul li {
   }
   .steps-section {
     padding: 50px 40px;
+  }
+
+  .photo-button {
+    width: 16%;
   }
 }
 
@@ -215,6 +221,10 @@ header ul li {
   }
   .boton-start-second{
     display: none;
+  }
+
+  .photo-button {
+    width: 28%;
   }
 }
 

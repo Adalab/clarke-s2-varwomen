@@ -4,7 +4,7 @@
 
 function printDiv(printCv) {
      var contenido = document.getElementById(printCv).innerHTML;
-     var contenidoOriginal = document.body.innerHTML;
+     var contenidoOriginal= document.body.innerHTML;
      document.body.innerHTML = contenido;
      window.print();
      document.body.innerHTML = contenidoOriginal;
@@ -91,15 +91,15 @@ function showIntoCV1() {
   dataCV1[2].innerHTML = userInputPersonales1[5].value + ' ' + userInputPersonales1[6].value + ', ' + userInputPersonales1[7].value;
   descriptionPersonalCV.innerHTML = descriptionPersonal.value;
   if(userInputPersonales1[8].value !== '') {
-    dataSocial[0].innerHTML =  'Linkedin: ' + userInputPersonales1[8].value;
+    dataSocial[0].innerHTML =  'Twitter: ' + userInputPersonales1[8].value;
   } else {
     dataSocial[0].innerHTML =  '';
   } if(userInputPersonales1[9].value !== '') {
-    dataSocial[1].innerHTML =  'Twitter: ' + userInputPersonales1[9].value;
+    dataSocial[1].innerHTML =  'GitHub: ' + userInputPersonales1[9].value;
   } else {
     dataSocial[1].innerHTML =  '';
   } if(userInputPersonales1[10].value !== '') {
-    dataSocial[2].innerHTML =  'GitHub: ' + userInputPersonales1[10].value;
+    dataSocial[2].innerHTML =  'Linkedin: ' + userInputPersonales1[10].value;
   } else {
     dataSocial[2].innerHTML =  '';
   }
