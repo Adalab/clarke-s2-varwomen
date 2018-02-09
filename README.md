@@ -1,1 +1,2 @@
-# VarWoman
+Curriculum interactivo.
+Herramientas: HTML & CSS, JavaScript
